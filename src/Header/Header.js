@@ -3,10 +3,10 @@ import './Header.scss';
 
 const header = (props) => {
   return <header>
-    <div class="container">
-      <div class="row">
-           <a class="logo col-lg-2" href="#">HYSTERIA</a> 
-           <nav class="col-lg-10">
+    <div className="container">
+      <div className="row">
+           <a className="logo col-lg-2" href="#">HYSTERIA</a> 
+           <nav className="col-lg-10">
              <ul>
                <li><a href="#">About us</a></li>
                <li><a href="#">Game<span>s</span></a>

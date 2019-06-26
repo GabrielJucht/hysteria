@@ -3,8 +3,8 @@ import './Content.scss';
 import About from '../About/About.js';
 
 const content = (props) => {
-  return <div class="container">
-    <div class="row">
+  return <div className="container">
+    <div className="row">
       <About />
     </div>
   </div>
