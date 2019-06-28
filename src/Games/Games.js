@@ -1,13 +1,12 @@
 import React from 'react';
-import './About.scss';
-import image from '../images/about.jpg';
+import './Games.scss';
 
 
-const about = (props) => {
-  return <div className="container about">
+const games = (props) => {
+  return <div className="container games">
           <div className="row">
             <div className="col-sm-4">
-              <img src={image} alt=""/>
+
             </div>
             <div className="texto col-sm-8">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim risus, viverra eu facilisis sit amet, volutpat ac nisl. Suspendisse potenti. In tincidunt lobortis sem non pellentesque. Vivamus convallis id est sed vehicula. Aliquam quam est, vestibulum varius laoreet feugiat, elementum quis leo. Integer diam urna, sodales nec mattis sed, porta a leo. Sed eros urna, posuere sit amet ligula non, sollicitudin volutpat est. Mauris at dictum leo. Aenean finibus lectus at leo bibendum ultricies. In hac habitasse platea dictumst.</p>
@@ -18,10 +17,8 @@ const about = (props) => {
          </div>
          
       
-      
-      
          
 }
 
 
-export default about;
+export default games;
