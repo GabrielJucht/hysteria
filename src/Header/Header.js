@@ -16,7 +16,7 @@ const header = (props) => {
              <ul>
                <li><NavLink to="/about">About us</NavLink></li>
                <li><NavLink to="/games">Game<span>s</span></NavLink>
-               <ul><li><NavLink to="/games">Exo and the Pyramids of Chaos</NavLink></li></ul>
+               <ul><li><NavLink to="/pyramids">Exo and the Pyramids of Chaos</NavLink></li></ul>
                </li>
                <li><NavLink to="/contact">Contact</NavLink></li>
              </ul>

@@ -2,25 +2,45 @@ import React from 'react';
 import './Contact.scss';
 
 
-const contact = (props) => {
-  return <div className="container contact">
-          <div className="row">
-            <div className="col-sm-4">
-            
-            </div>
-            <div className="texto col-sm-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim risus, viverra eu facilisis sit amet, volutpat ac nisl. Suspendisse potenti. In tincidunt lobortis sem non pellentesque. Vivamus convallis id est sed vehicula. Aliquam quam est, vestibulum varius laoreet feugiat, elementum quis leo. Integer diam urna, sodales nec mattis sed, porta a leo. Sed eros urna, posuere sit amet ligula non, sollicitudin volutpat est. Mauris at dictum leo. Aenean finibus lectus at leo bibendum ultricies. In hac habitasse platea dictumst.</p>
-                <p>Nulla eu commodo tellus, sit amet vestibulum enim. Maecenas vitae ornare nulla, convallis cursus tellus. Etiam sodales accumsan vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis faucibus sapien tincidunt justo tincidunt, nec rhoncus ligula facilisis. In hac habitasse platea dictumst. Praesent arcu mi, sagittis eu augue porttitor, lobortis condimentum dolor.</p>
-                <p>Nulla eu commodo tellus, sit amet vestibulum enim. Maecenas vitae ornare nulla, convallis cursus tellus. Etiam sodales accumsan vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis faucibus sapien tincidunt justo tincidunt, nec rhoncus ligula facilisis. In hac habitasse platea dictumst. Praesent arcu mi, sagittis eu augue porttitor, lobortis condimentum dolor.</p>
-            </div>
-         </div>
-         </div>
-         
-      
-      
-      
-         
-}
+class contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
 
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    console.log('A name was submitted: ' + this.state.value);
+    
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange} name="name"/>
+        </label><br/>
+        <label>
+          Mail:
+          <input type="email" value={this.state.value} onChange={this.handleChange} name="mail"/>
+        </label><br/>
+        <label>
+          Subject:
+          <input type="text" value={this.state.value} onChange={this.handleChange} name="subject"/>
+        </label><br/>
+        <textarea type="textarea" name="content">
+        </textarea><br/>
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
 
 export default contact;

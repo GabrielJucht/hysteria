@@ -6,6 +6,7 @@ import {
 import './Content.scss';
 import About from '../About/About.js';
 import Games from '../Games/Games.js';
+import Pyramids from '../Pyramids/Pyramids.js';
 import Contact from '../Contact/Contact.js';
 import Main from '../Main/Main.js';
 
@@ -17,6 +18,7 @@ const content = (props) => {
       <Route path="/index" component={Main}/>
       <Route path="/about" component={About}/>
       <Route path="/games" component={Games}/>
+      <Route path="/pyramids" component={Pyramids}/>
       <Route path="/contact" component={Contact}/>
     </div>
   </div>
