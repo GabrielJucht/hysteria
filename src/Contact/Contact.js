@@ -5,14 +5,28 @@ import './Contact.scss';
 class contact extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {
+      name: '',
+      mail: '',
+      subject: ''
+    };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleNameChange = this.handleNameChange.bind(this);
+    this.handleMailChange = this.handleMailChange.bind(this);
+    this.handleSubjectChange = this.handleSubjectChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
+  handleNameChange(event) {
+    this.setState({name: event.target.value});
+  }
+  
+  handleMailChange(event) {
+    this.setState({mail: event.target.value});
+  }
+
+  handleSubjectChange(event) {
+    this.setState({subject: event.target.value});
   }
 
   handleSubmit(event) {
@@ -24,16 +38,16 @@ class contact extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} name="name"/>
+          Name:<br/>
+          <input type="text" value={this.state.name.value} onChange={this.handleNameChange} name="name"/>
         </label><br/>
         <label>
           Mail:
-          <input type="email" value={this.state.value} onChange={this.handleChange} name="mail"/>
+          <input type="email" value={this.state.mail.value} onChange={this.handleMailChange} name="mail"/>
         </label><br/>
         <label>
           Subject:
-          <input type="text" value={this.state.value} onChange={this.handleChange} name="subject"/>
+          <input type="text" value={this.state.subject.value} onChange={this.handleSubjectChange} name="subject"/>
         </label><br/>
         <textarea type="textarea" name="content">
         </textarea><br/>

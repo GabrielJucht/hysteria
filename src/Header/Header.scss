@@ -24,6 +24,9 @@ header {
                 &:first-child {
                     margin-left:0;
                 }
+                &:last-child {
+                    margin-right:0;
+                }
                 a {
                     color:#ffffff;
                     display: inline-block;
@@ -44,16 +47,36 @@ header {
                         a {
                             padding:5px;
                         }
+                       
                     }
                 }
                 &:hover {
                   a {
                       color:red;
                       text-decoration: none;
+                      border-radius:5px 5px 0 0;
+                      transition: width .5s ease-in-out;
                   }
                     ul {
                         display:block;
+                        li {
+                            padding:3px;
+                            a {
+                                color:#ffffff;
+                            }
+                            &:hover {
+                                background-color:red;    
+                                transition: 0.5s;
+                                a {
+                                    color:#ffffff;
+                                }
+                            }
+                        }
+
                     }
+                }
+                &.hover {
+                    display:none;
                 }
             }
         }

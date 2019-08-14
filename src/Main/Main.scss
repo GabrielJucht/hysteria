@@ -1,16 +1,23 @@
-img {
-    width:800px;
-    margin:0 auto;
-}
+.main {
+    display:inline-block;
+    img {
+        margin:0 auto;
+        width: 100%;
+    }
 
-.hero-text {
-    position: absolute;
-    margin: 290px 200px 0;
-    
-}
+    .hero-text {
+        background-image:url('../images/back-square.png');
+        background-repeat:repeat;
+        position: relative;
+        bottom: 141px;
+        padding: 10px 30px;
+        width: 100%;
+        
+    }
 
-h1 {
-    color: #cccccc;
-    font-size: 34px;    
-    text-shadow: 1px 1px 1px #000000;
+    h1 {
+        color: #cccccc;
+        font-size: 34px;    
+        text-shadow: 1px 1px 1px #000000;
+    }
 }
