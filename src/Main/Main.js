@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.scss';
-import hero from '../images/hero.jpg';
+import hero from '../images/cover.png';
 
 
 const main = (props) => {
@@ -9,7 +9,7 @@ const main = (props) => {
           <img src={hero} alt=""/>
           <div className="hero-text">
             <h1>Exo and the<br />Pyramids of Chaos</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim risus, viverra eu facilisis sit amet, volutpat ac nisl. Suspendisse potenti. </p>
+            <p>Exo travels to a strange place call Earth to find the artifacts that can save his planet from extinction.</p>
           </div>
          </div>
          </div>

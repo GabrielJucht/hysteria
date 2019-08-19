@@ -4,6 +4,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import './Header.scss';
+import image from '../images/logo.png';
 
 const header = (props) => {
   return (
@@ -11,7 +12,7 @@ const header = (props) => {
   <header>
     <div className="container">
       <div className="row">
-      <NavLink className="logo col-lg-2" to="/index">HYSTERIA</NavLink> 
+      <NavLink className="logo col-lg-2" to="/index"><img src={image} /></NavLink> 
            <nav className="col-lg-10">
              <ul>
                <li className="regular"><NavLink to="/about">About us</NavLink></li>

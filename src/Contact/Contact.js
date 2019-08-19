@@ -37,21 +37,18 @@ class contact extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:<br/>
-          <input type="text" value={this.state.name.value} onChange={this.handleNameChange} name="name"/>
-        </label><br/>
-        <label>
-          Mail:
-          <input type="email" value={this.state.mail.value} onChange={this.handleMailChange} name="mail"/>
-        </label><br/>
-        <label>
-          Subject:
-          <input type="text" value={this.state.subject.value} onChange={this.handleSubjectChange} name="subject"/>
-        </label><br/>
+        <label for="name">Name</label>
+          <input type="text" value={this.state.name.value} onChange={this.handleNameChange} id="name" name="name"/>
+         <br/>
+        <label for="mail">Mail</label>
+          <input type="email" value={this.state.mail.value} onChange={this.handleMailChange} name="mail" id="mail"/>
+        <br/>
+        <label for="subject">Subject</label>
+          <input type="text" value={this.state.subject.value} onChange={this.handleSubjectChange} name="subject" id="subject"/>
+        <br/>
         <textarea type="textarea" name="content">
         </textarea><br/>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Send" id="submit" />
       </form>
     );
   }

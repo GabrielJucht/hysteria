@@ -1,0 +1,29 @@
+form {
+    margin: 0 auto;
+    input {
+        width:300px;
+    }
+    label {
+        color:#ffffff;
+        width:70px;
+    }
+
+    input {
+        border:0;
+    }
+
+    textarea {
+        margin-left: 70px;
+        width: 300px;
+    }
+
+    #submit {
+        width: 100px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        float: right;
+        margin-top: 15px;
+    
+    }
+
+}

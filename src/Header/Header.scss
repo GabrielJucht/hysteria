@@ -1,18 +1,15 @@
 header {
     padding:20px 0 0;
+    .container {
     .logo {
-        background-color: red;
-        width: 150px;
-        height: 50px;
-        color: #ffffff;
-        text-align: center;
-        padding: 10px;
         float:left;
+        img {
+            width:100%;
+        }
     }
     nav {
         float:right;
         ul {
-            margin: 15px 0 0;
             float: right;
             li {
                 float:left;
@@ -28,9 +25,12 @@ header {
                     margin-right:0;
                 }
                 a {
-                    color:#ffffff;
+                    color: #ffffff;
                     display: inline-block;
                     padding: 10px;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 600;
+
                     span {
                         text-decoration: line-through;
                     }
@@ -52,7 +52,7 @@ header {
                 }
                 &:hover {
                   a {
-                      color:red;
+                      color:#e81c2a;
                       text-decoration: none;
                       border-radius:5px 5px 0 0;
                       transition: width .5s ease-in-out;
@@ -65,8 +65,9 @@ header {
                                 color:#ffffff;
                             }
                             &:hover {
-                                background-color:red;    
+                                background-color:#e81c2a;    
                                 transition: 0.5s;
+                                border-radius:3px;
                                 a {
                                     color:#ffffff;
                                 }
@@ -81,4 +82,5 @@ header {
             }
         }
     }
+}
 }

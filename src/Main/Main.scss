@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap');
+
 .main {
     display:inline-block;
     img {
@@ -8,10 +10,14 @@
     .hero-text {
         background-image:url('../images/back-square.png');
         background-repeat:repeat;
-        position: relative;
-        bottom: 141px;
+        position: absolute;
         padding: 10px 30px;
-        width: 100%;
+        width: 25%;
+        height: 190px;
+        top: 390px;
+        p {
+            font-size:16px;
+        }
         
     }
 
