@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap');
 
+body {
+    font-family:'raleway';
 .main {
     display:inline-block;
     img {
@@ -24,6 +26,9 @@
     h1 {
         color: #cccccc;
         font-size: 34px;    
+        font-family: 'Raleway';
+        font-weight:600;
         text-shadow: 1px 1px 1px #000000;
     }
+}
 }
