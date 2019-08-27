@@ -10,7 +10,7 @@ const about = (props) => {
               <img src={image} alt=""/>
             </div>
             <div className="texto col-sm-8">
-                <p>When you work as a programmer and love videogames is only a small step that make you try to make one of your own. We love story driven games so this turns to be our goal.</p>
+                <p>When you work as a programmer and love videogames is only a small step that make you try to make one of your own. We love story driven games so this turns to be our goal. To create indie games with cool stories and memorable characters.</p>
             </div>
          </div>
          </div>

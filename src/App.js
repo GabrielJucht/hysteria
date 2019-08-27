@@ -1,4 +1,5 @@
 import React from 'react';
+import './Variables.scss';
 import './App.scss';
 import Header from './Header/Header.js';
 import Content from './Content/Content.js';

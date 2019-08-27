@@ -1,8 +1,15 @@
-$font: helvetica;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap');
+@import "Variables.scss";
+
 
 body {
     background-color:#000000;
     font-family: $font;
+    font-size:$fontSize;
+    p {
+        font-size:$fontSize;
+        color:$white;
+    }
     #content {
         margin:100px 0;
     }

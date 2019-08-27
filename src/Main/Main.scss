@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap');
+@import "../Variables.scss";
 
-body {
-    font-family:'raleway';
+
 .main {
     display:inline-block;
     img {
@@ -15,20 +14,19 @@ body {
         position: absolute;
         padding: 25px 30px;
         width: 25%;
-        height: 190px;
         top: 390px;
         p {
-            font-size:16px;
+            font-size: 16px;
+            text-shadow: 1px 1px 1px #000000;
         }
         
     }
 
     h1 {
-        color: #cccccc;
+        color: $white;
         font-size: 34px;    
         font-family: 'Raleway';
         font-weight:600;
         text-shadow: 1px 1px 1px #000000;
     }
-}
 }

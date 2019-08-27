@@ -1,4 +1,6 @@
-p {
-    color:#ffffff;
-    font-size:12px; 
+@import "../Variables.scss";
+footer {
+    p {
+       font-size:12px;
+    }
 }
