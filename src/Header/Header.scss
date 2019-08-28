@@ -9,6 +9,9 @@ header {
             width:100%;
         }
     }
+    .burguer {
+        display:none;
+    }
     nav {
         float:right;
         ul {
@@ -84,4 +87,26 @@ header {
         }
     }
 }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        .container {
+            .logo {
+                width:200px;
+            }
+            .burguer {
+                display: block;
+                float: right;
+                width: 50px;
+                i {
+                    color:$white;
+                    font-size: 26px;
+                }
+            }
+            nav {
+                display:none;
+            }
+        }
+    }
 }

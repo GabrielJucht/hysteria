@@ -5,6 +5,10 @@ import Header from './Header/Header.js';
 import Content from './Content/Content.js';
 import Footer from './Footer/Footer.js';
 
+const fawes = document.createElement("script");
+fawes.src = "https://kit.fontawesome.com/0fe20c6fd1.js";
+document.head.appendChild(fawes);
+
 function App() {
   return (
     <div className="App">
@@ -18,3 +22,5 @@ function App() {
 }
 
 export default App;
+
+

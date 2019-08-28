@@ -12,7 +12,10 @@ const header = (props) => {
   <header>
     <div className="container">
       <div className="row">
-      <NavLink className="logo col-lg-2" to="/index"><img src={image} /></NavLink> 
+      <NavLink className="logo col-lg-2 col-xs-8" to="/index"><img src={image} /></NavLink> 
+      <a href="#" className="burguer col-lg-2 col-xs-4"><i className="fas fa-bars"></i></a>
+      </div>
+      <div className="row">
            <nav className="col-lg-10">
              <ul>
                <li className="regular"><NavLink to="/about">About us</NavLink></li>
@@ -22,7 +25,7 @@ const header = (props) => {
                </li>
                <li><NavLink to="/contact" className="regular">Contact</NavLink></li>
              </ul>
-           </nav>
+           </nav> 
       </div>
     </div>
       </header>
