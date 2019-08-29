@@ -6,10 +6,10 @@ import image from '../images/cover.png';
 const pyramids = (props) => {
   return <div className="container pyramid">
           <div className="row">
-              <div class="col-sm-4">
+              <div className="col-sm-4">
                 <img src={image} alt=""/>
               </div>
-              <div class="col-sm-8">
+              <div className="col-sm-8">
               <h3>Exo and the Pyramids of Chaos</h3>
               <p><span>[IN DEVELOPMENT]</span> Our first project its a platformer/adventure game.<br />
               Exo its an alien that comes to Earth to find artifacts that his race left in our planet thousands of years ago.
