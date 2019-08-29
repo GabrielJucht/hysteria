@@ -10,7 +10,9 @@ header {
         }
     }
     .burguer {
-        display:none;
+        a {
+            display:none;
+        }
     }
     nav {
         float:right;
@@ -93,19 +95,32 @@ header {
     header {
         .container {
             .logo {
-                width:200px;
+                a {
+                    width: 200px;
+                    display: inline-block;
+                }
             }
             .burguer {
-                display: block;
-                float: right;
-                width: 50px;
+                a {
+                    display: block;
+                    float: right;
+                    margin: 10px;
                 i {
                     color:$white;
                     font-size: 26px;
                 }
+                &:hover {
+                    i {
+                        color:$red;
+                    }
+                }
+            }
             }
             nav {
                 display:none;
+                &.desplegado {
+                    display:block;
+                }
             }
         }
     }

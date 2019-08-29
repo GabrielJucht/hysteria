@@ -12,14 +12,15 @@ const header = (props) => {
   <header>
     <div className="container">
       <div className="row">
-      <NavLink className="logo col-lg-2 col-xs-8" to="/index"><img src={image} /></NavLink> 
-      <a href="#" className="burguer col-lg-2 col-xs-4"><i className="fas fa-bars"></i></a>
+        <div className="logo col-lg-2 col-9">
+          <NavLink to="/index"><img src={image} /></NavLink> 
+        </div>
+      <div className="burguer col-lg-2 col-3">
+       <a href="javascript:void(0)"><i className="fas fa-bars"></i></a>
       </div>
-      <div className="row">
-           <nav className="col-lg-10">
+      <nav className="col-lg-10">
              <ul>
                <li className="regular"><NavLink to="/about">About us</NavLink></li>
-               <li className="hover"><NavLink to="/about">About us</NavLink></li>
                <li><NavLink to="/pyramids" className="regular">Game<span>s</span></NavLink>
                <ul><li><NavLink to="/pyramids">Exo and the Pyramids of Chaos</NavLink></li></ul>
                </li>
@@ -27,10 +28,12 @@ const header = (props) => {
              </ul>
            </nav> 
       </div>
-    </div>
+      </div>
       </header>
   </HashRouter> );
          
 }
 
 export default header;
+
+
