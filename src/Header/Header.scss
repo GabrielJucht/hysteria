@@ -10,9 +10,8 @@ header {
         }
     }
     .burguer {
-        a {
-            display:none;
-        }
+        display:none;
+        
     }
     nav {
         float:right;
@@ -75,7 +74,7 @@ header {
                                 transition: 0.5s;
                                 border-radius:3px;
                                 a {
-                                    color:#ffffff;
+                                    color:$white;
                                 }
                             }
                         }
@@ -101,10 +100,11 @@ header {
                 }
             }
             .burguer {
+                display: block;
+                float: right;
+                margin: 10px 0 0;
                 a {
-                    display: block;
-                    float: right;
-                    margin: 10px;
+                display:inline-block;
                 i {
                     color:$white;
                     font-size: 26px;
@@ -112,6 +112,25 @@ header {
                 &:hover {
                     i {
                         color:$red;
+                    }
+                }
+            }
+            ul{
+                position: absolute;
+                padding: 0;
+                margin-left: -45px;
+                margin-top: 15px;
+                li {
+                    list-style-type: none;
+                    text-align: right;
+                    text-transform: uppercase;
+                    margin-bottom:5px;
+                    a {
+                        color:$white;
+                        text-decoration:none;
+                        &:hover {
+                            color:$red;
+                        }
                     }
                 }
             }

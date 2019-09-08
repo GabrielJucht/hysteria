@@ -12,11 +12,16 @@ const header = (props) => {
   <header>
     <div className="container">
       <div className="row">
-        <div className="logo col-lg-2 col-9">
+        <div className="logo col-lg-2 col-10">
           <NavLink to="/index"><img src={image} /></NavLink> 
         </div>
-      <div className="burguer col-lg-2 col-3">
+      <div className="burguer col-lg-2 col-2">
        <a href="javascript:void(0)"><i className="fas fa-bars"></i></a>
+       <ul>
+          <li className="regular"><NavLink to="/about">About us</NavLink></li>
+          <li><NavLink to="/pyramids" className="regular">Game<span>s</span></NavLink></li>
+          <li><NavLink to="/contact" className="regular">Contact</NavLink></li>
+        </ul>
       </div>
       <nav className="col-lg-10">
              <ul>
