@@ -17,7 +17,7 @@ const header = (props) => {
         </div>
       <div className="burguer col-lg-2 col-2">
        <a href="javascript:void(0)"><i className="fas fa-bars"></i></a>
-       <ul>
+       <ul className="menu-mobile">
           <li className="regular"><NavLink to="/about">About us</NavLink></li>
           <li><NavLink to="/pyramids" className="regular">Game<span>s</span></NavLink></li>
           <li><NavLink to="/contact" className="regular">Contact</NavLink></li>

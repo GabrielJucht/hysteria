@@ -116,15 +116,20 @@ header {
                 }
             }
             ul{
+                display:none;
                 position: absolute;
                 padding: 0;
-                margin-left: -45px;
-                margin-top: 15px;
+                background-color: #000000;
+                padding: 5px 10px 0;
+                margin-left: -55px;
+                margin-top: 0px;
+                border-radius: 5px;
+                z-index: 1;
                 li {
                     list-style-type: none;
                     text-align: right;
                     text-transform: uppercase;
-                    margin-bottom:5px;
+                    margin-bottom: 10px;
                     a {
                         color:$white;
                         text-decoration:none;

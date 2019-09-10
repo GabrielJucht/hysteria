@@ -11,9 +11,14 @@ document.head.appendChild(fawes);
 
 window.onload = () => {
   
-  var burguer = document.getElementsByClassName("burguer")[0];
+  let burguer = document.getElementsByClassName("burguer")[0];
+  let menuMobile =  document.getElementsByClassName("menu-mobile")[0];
   burguer.onclick = () => {
-    //document.getElementsByTagName("nav").classList.add("desplegado");
+    if (menuMobile.style.display != 'block') {
+      menuMobile.style.display = "block";
+    } else {
+      menuMobile.style.display = "none";
+    }
   }
   
 };

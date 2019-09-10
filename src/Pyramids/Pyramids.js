@@ -6,7 +6,7 @@ import image from '../images/cover.png';
 const pyramids = (props) => {
   return <div className="container pyramid">
           <div className="row">
-              <div className="col-sm-4">
+              <div className="col-sm-4 imagen">
                 <img src={image} alt=""/>
               </div>
               <div className="col-sm-8">
