@@ -15,7 +15,7 @@ const content = (props) => {
   <HashRouter>
   <div className="container">
     <div className="row">
-      <Route path="/index" component={Main}/>
+      <Route exact path="/" component={Main}/>
       <Route path="/about" component={About}/>
       <Route path="/games" component={Games}/>
       <Route path="/pyramids" component={Pyramids}/>

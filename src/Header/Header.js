@@ -13,7 +13,7 @@ const header = (props) => {
     <div className="container">
       <div className="row">
         <div className="logo col-lg-2 col-10">
-          <NavLink to="/index"><img src={image} /></NavLink> 
+          <NavLink to="/"><img src={image} /></NavLink> 
         </div>
       <div className="burguer col-lg-2 col-2">
        <a href="javascript:void(0)"><i className="fas fa-bars"></i></a>
