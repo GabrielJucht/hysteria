@@ -13,11 +13,16 @@ window.onload = () => {
   
   let burguer = document.getElementsByClassName("burguer")[0];
   let menuMobile =  document.getElementsByClassName("menu-mobile")[0];
+  let burguerLink = burguer.getElementsByTagName("a")[0];
+  
+
   burguer.onclick = () => {
     if (menuMobile.style.display != 'block') {
       menuMobile.style.display = "block";
+      burguerLink.classList.add("open");
     } else {
       menuMobile.style.display = "none";
+      burguerLink.classList.remove("open");
     }
   }
   
