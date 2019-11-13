@@ -109,10 +109,22 @@ header {
                 i {
                     color:$white;
                     font-size: 26px;
+                    &.fa-times {
+                        display:none;
+                    }
                 }
                 &:hover {
                     i {
                         color:$red;
+                    }
+                }
+                &.open {
+                    .fa-bars {
+                        display:none;
+                    }
+                    .fa-times {
+                        display:block;
+                        margin: 0px 5px;
                     }
                 }
             }
@@ -122,15 +134,16 @@ header {
                 padding: 0;
                 background-color: #000000;
                 padding: 5px 10px 0;
-                margin-left: -55px;
-                margin-top: 0px;
+                margin-left: -50px;
+                margin-top: 30px;
                 border-radius: 5px;
                 z-index: 1;
                 li {
                     list-style-type: none;
                     text-align: right;
                     text-transform: uppercase;
-                    margin-bottom: 10px;
+                    margin-bottom: 0px;
+                    display: inline-block;
                     a {
                         color:$white;
                         text-decoration:none;
