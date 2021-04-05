@@ -5,7 +5,7 @@ const footer = (props) => {
   return <footer>
       <div className="container">
           <div className="row">
-             <p className="col-12">Copyright © 2019 - All rights reserved.</p>
+             <p className="col-12">Copyright © 2021 - All rights reserved.</p>
          </div>
       </div>
       </footer>

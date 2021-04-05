@@ -14,14 +14,14 @@ window.onload = () => {
   let burguer = document.getElementsByClassName("burguer")[0];
   let menuMobile =  document.getElementsByClassName("menu-mobile")[0];
   let iconoBurguer = burguer.getElementsByTagName("i")[0];
+  let linkBurguer = document.getElementsByClassName("burguer")[0].firstElementChild;
   burguer.onclick = () => {
     if (menuMobile.style.display != 'block') {
       menuMobile.style.display = "block";
-      iconoBurguer.classList.remove("fa-bars");
-      iconoBurguer.classList.add("");
+      linkBurguer.classList.add("open");
     } else {
       menuMobile.style.display = "none";
-      iconoBurguer.classList.remove("fa-bars");
+      linkBurguer.classList.remove("open");
     }
   }
   

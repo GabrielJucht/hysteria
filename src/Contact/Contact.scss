@@ -1,5 +1,14 @@
 @import "../Variables.scss";
 
+#contact-form {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.App {
+    width:100%;
+}
+
 form {
     margin: 0 auto;
     label {
@@ -17,20 +26,19 @@ form {
     }
 
     textarea {
-        margin-left: 70px;
         width: 400px;
         height: 100px;
         padding:5px;
     }
 
-    #submit {
+    #submit,
+    .btn-primary {
         width: 100px;
-        background-color: $white;
         border-radius: 10px;
         float: right;
         margin-top: 15px;
         &:hover {
-            background-color:$red;
+            background-color:green;
             color:$white;
         }
     }
@@ -41,6 +49,9 @@ form {
     form {
         padding:20px;
         width:100%;
+        &#contact-form{
+            width:90%;  
+        }
         input {
             width: 78%;
         }
